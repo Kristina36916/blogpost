@@ -5,11 +5,11 @@ export default function Meni() {
   return (
     <div>
         <nav id="topnav">
-         <a id="logo" class="nav-link">Živite zdravo! </a>
-         <Link className="nav-link" to="\">Početna</Link>
-         <Link className="nav-link" to="#">Blog</Link>
-         <Link className="nav-link" to="#">Kontakt</Link>
-         <a id="about" class="nav-link" href="#">O nama</a>
+         <a id="logo" className="nav-link">Živite zdravo! </a>
+         <Link className="nav-link" to="/">Početna</Link>
+         <Link className="nav-link" to="/postovi">Blog</Link>
+         <Link className="nav-link" to="/kontakt">Kontakt</Link>
+         <Link className="nav-link" to="/onama">O nama</Link>
       </nav>
     </div>
   )
