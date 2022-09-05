@@ -9,7 +9,7 @@ import Onama from './Komponente/Onama';
 import { useState } from "react";
 
 function App() {
-  const blogPosts = useState( [
+  const blogPosts = [
     {
       title: "Hodanje ili trčanje – kako odabrati pravu fizičku aktivnost?",
       body: `Svi znaju da je vežbanje dobro za telo i um. Redovno vežbanje sa sobom donosi čitav niz prednosti,
@@ -53,7 +53,7 @@ function App() {
         "https://rs.n1info.com/wp-content/uploads/2022/01/21/1642804583-shutterstock_228533539-900x600.jpg",
         brojCitanja:0
     },
-  ]);
+  ];
   const [brojCitanja, setBrojCitanja] = useState(0);
   function postRead(title) {
     console.log("Procitan je post: " + title);
