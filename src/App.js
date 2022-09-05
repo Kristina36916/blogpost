@@ -5,7 +5,9 @@ import Futer from './Komponente/Futer';
 import pozadina from './Slike/R.jfif'; 
 import Postovi from './Komponente/Postovi';
 import Kontakt from './Komponente/Kontakt';
+import Onama from './Komponente/Onama';
 import { useState } from "react";
+
 
 function App() {
   const blogPosts = [
@@ -67,6 +69,7 @@ function App() {
       <Route path='/'element={<img className="img"src={pozadina} alt="slika pozadine"  />}/>
         <Route path='/postovi'element={<Postovi posts={blogPosts} read={postRead}/>}/>
         <Route path='/kontakt'element={<Kontakt/>}></Route>
+        <Route path='/onama'element={<Onama/>}></Route>
         
       </Routes>
 

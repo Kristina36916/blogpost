@@ -1,6 +1,13 @@
 import React from 'react'
+import { Rating } from 'react-simple-star-rating'
+import { useState } from "react";
 
 const Post = ({ post, postRead }) => {
+  setDestinationPlace({ value: { data, details } });
+  const [rating, setRating] = useState(0);
+  const handleRating =(rate: number)=> {
+    setRating(rate)
+  };
       return (  
         <div className="post-container">
           <h1 className="heading">{post.title}</h1>
@@ -10,6 +17,7 @@ const Post = ({ post, postRead }) => {
             <h4>Autor: {post.author}</h4>
             <h3>Broj citanja:{post.postRead}</h3>
           </div>
+          <Rating onClick={handleRating} ratingValue={rating}  />
           <button
             className="btn"
             onClick={() => postRead(post.title)}
@@ -19,6 +27,6 @@ const Post = ({ post, postRead }) => {
           
         </div>
       );
-    };
+    
 
 export default Post

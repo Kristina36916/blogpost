@@ -20,9 +20,10 @@ function Kontakt() {
     <input type="text" name="email" id="email" placeholder="Unesite email"/>
 </div>
 <div className="polje">
-    <label for="datum">Datum</label>
-    <input type="date" name="datum" id="datum" />
+    <label for="pitanje">Vaše pitanje</label>
+    <input type="text" name="pitanje" id="email" placeholder="Unesite vaše pitanje"/>
 </div>
+
 <div className="polje">
             <button type="submit" name="submit" class="btn">Potvrdi</button>
         </div>
