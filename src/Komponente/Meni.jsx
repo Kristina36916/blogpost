@@ -9,7 +9,6 @@ export default function Meni() {
          <Link className="nav-link" to="/">Početna</Link>
          <Link className="nav-link" to="/postovi">Blog</Link>
          <Link className="nav-link" to="/kontakt">Kontakt</Link>
-         <Link className="nav-link" to="/onama">O nama</Link>
       </nav>
     </div>
   )
