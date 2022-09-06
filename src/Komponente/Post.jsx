@@ -3,7 +3,7 @@ import { Rating } from 'react-simple-star-rating'
 import { useState } from "react";
 
 const Post = ({ post, postRead }) => {
-  setDestinationPlace({ value: { data, details } });
+
   const [rating, setRating] = useState(0);
   const handleRating =(rate: number)=> {
     setRating(rate)
@@ -27,6 +27,6 @@ const Post = ({ post, postRead }) => {
           
         </div>
       );
-    
+      };
 
-export default Post
+export default Post;
