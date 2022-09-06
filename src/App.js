@@ -6,6 +6,7 @@ import pozadina from './Slike/R.jfif';
 import Postovi from './Komponente/Postovi';
 import Kontakt from './Komponente/Kontakt';
 import Onama from './Komponente/Onama';
+import Izmena from './Komponente/Izmena';
 import { useState } from "react";
 
 
@@ -74,6 +75,7 @@ function App() {
       </Routes>
 
     </BrowserRouter>
+    <Izmena></Izmena>
     <Futer></Futer>
     </div>
   );
